@@ -26,4 +26,7 @@ describe("String#scrabble_score") do
   it('returns NIL if input is not a letter ') do
     expect("1".scrabble_score()).to(eq("Input is not valid"))
   end
+  it('returns score for word') do
+    expect("apple".scrabble_score()).to(eq(9))
+  end
 end
