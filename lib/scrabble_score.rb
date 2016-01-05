@@ -1,6 +1,6 @@
 class String
   define_method(:scrabble_score) do
-    return "Input is not valid" if self.is_number || self =~ /[[:punct:]]/
+    return "Input is not valid" if self.include_number || self =~ /[[:punct:]]/
 
     word_score = 0
     alphabet_score = Hash.new()
@@ -24,7 +24,12 @@ class String
     return word_score
   end
 
-  define_method( :is_number ) do
-    return self.to_f.to_s == self.to_s || self.to_i.to_s == self.to_s
+  define_method( :include_number ) do
+    self.split(//).each do |character|
+      if character.to_f.to_s == character.to_s || character.to_i.to_s == character.to_s
+        return true
+      end
+    end
+    return false
   end
 end
