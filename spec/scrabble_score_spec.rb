@@ -23,4 +23,7 @@ describe("String#scrabble_score") do
   it('returns a scrabble score for an even more valued letter') do
     expect("q".scrabble_score()).to(eq(10))
   end
+  it('returns NIL if input is not a letter ') do
+    expect("1".scrabble_score()).to(eq("Input is not valid"))
+  end
 end
