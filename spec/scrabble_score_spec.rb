@@ -17,4 +17,7 @@ describe("String#scrabble_score") do
   it('returns a scrabble score for an even more valued letter') do
     expect("k".scrabble_score()).to(eq(5))
   end
+  it('returns a scrabble score for an even more valued letter') do
+    expect("J".scrabble_score()).to(eq(8))
+  end
 end
