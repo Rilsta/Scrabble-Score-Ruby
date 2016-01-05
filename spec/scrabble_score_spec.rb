@@ -5,6 +5,12 @@ describe('String#include_number') do
   it('returns false if letter') do
     expect('d'.include_number()).to(eq(false))
   end
+  it('returns true if number') do
+    expect('3'.include_number()).to(eq(true))
+  end
+  it('returns true if number within word') do
+    expect('appl3'.include_number()).to(eq(true))
+  end
 end
 
 describe("String#scrabble_score") do
