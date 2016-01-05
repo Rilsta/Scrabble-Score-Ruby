@@ -6,7 +6,7 @@ Scrabble Score converts a letter or word into a resulting numeric score, as if p
 
 ## Objective
 
-When the user inputs data, check if the input is valid, meaning it doesn't include any kind of numeric value or punctuation mark. If the input is valid, check each letter and add the total score together and return it.
+When the user inputs data check if the input is valid, meaning it doesn't include any kind of numeric value or punctuation mark, add the value of each letter and return the resulting score.
 
 ## Installation
 
