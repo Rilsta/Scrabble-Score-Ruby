@@ -5,6 +5,8 @@ class String
     alphabet_score.store("DG", 2)
     alphabet_score.store("BCMP", 3)
     alphabet_score.store("FHVWY", 4)
+    alphabet_score.store("K", 5)
+
 
     alphabet_score.keys.each do |score_key|
       score_string = score_key.split(//)
