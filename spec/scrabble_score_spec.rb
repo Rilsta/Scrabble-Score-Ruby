@@ -32,4 +32,7 @@ describe("String#scrabble_score") do
   it('returns score for word') do
     expect("app3le".scrabble_score()).to(eq("Input is not valid"))
   end
+  it('returns score for word') do
+    expect("oran!ge".scrabble_score()).to(eq("Input is not valid"))
+  end
 end
